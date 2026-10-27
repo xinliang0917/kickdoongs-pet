@@ -1,32 +1,32 @@
 {
-  "name": "kickdoongs桌宠",
-  "short_name": "kickdoongs",
-  "description": "兔玹 & 花东 · 可以切换角色的手机桌宠",
-  "lang": "zh-CN",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#eef7ff",
-  "theme_color": "#eef7ff",
-  "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ]
+    "name":  "kickdoongs桌宠",
+    "short_name":  "kickdoongs桌宠",
+    "description":  "兔玹 \u0026 花东 · 可以切换角色的手机桌宠",
+    "lang":  "zh-CN",
+    "start_url":  "./",
+    "scope":  "./",
+    "display":  "standalone",
+    "orientation":  "portrait",
+    "background_color":  "#eef7ff",
+    "theme_color":  "#eef7ff",
+    "icons":  [
+                  {
+                      "src":  "icons/icon-192.png",
+                      "sizes":  "192x192",
+                      "type":  "image/png",
+                      "purpose":  "any"
+                  },
+                  {
+                      "src":  "icons/icon-512.png",
+                      "sizes":  "512x512",
+                      "type":  "image/png",
+                      "purpose":  "any"
+                  },
+                  {
+                      "src":  "icons/maskable-512.png",
+                      "sizes":  "512x512",
+                      "type":  "image/png",
+                      "purpose":  "maskable"
+                  }
+              ]
 }
