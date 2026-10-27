@@ -8,6 +8,7 @@
     specialLabel: '滑板',
     specialType: 'skate',
     idleHeight: 299,
+    sizeScale: 1,
     sprites: [
       'idle', 'sleepy', 'happy', 'hot', 'giggle', 'bubbletea', 'bored', 'confused',
       'love', 'shy', 'wave', 'goodnight', 'angry', 'back', 'surprised', 'cuddle', 'skate',
@@ -57,6 +58,7 @@
     darkLabel: '翻回正面',
     specialType: 'flip',
     idleHeight: 514,
+    sizeScale: 0.9,
     sprites: [
       'idle', 'sleepy', 'happy', 'hot', 'giggle', 'snack', 'bored', 'confused',
       'love', 'shy', 'wave', 'goodnight', 'angry', 'back', 'surprised', 'cuddle', 'skate',
@@ -291,7 +293,7 @@ function applyDimensions() {
   const cfg = CHARACTERS[state.char];
   const sprite = (assets[state.char] && assets[state.char][state.expression]) || (assets[state.char] && assets[state.char].idle);
   if (!sprite) return;
-  const h = state.baseHeight * (sprite.h / cfg.idleHeight);
+  const h = state.baseHeight * (sprite.h / cfg.idleHeight) * (cfg.sizeScale || 1);
   const w = h * (sprite.w / sprite.h);
   state.petH = h;
   state.petW = w;
@@ -1117,6 +1119,7 @@ window.duoPet = {
 };
 
 start();
+
 
 
 
